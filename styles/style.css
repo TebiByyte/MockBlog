@@ -16,7 +16,9 @@ body {
     flex: 1;
     align-items: center;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-
+    position: relative;
+    z-index: 1;
+    
     .blog-title {
         font-family: 'istok web', Arial;
         font-size: 40px;
@@ -55,5 +57,74 @@ body {
             margin-left: 13px;
         }
         
+    }
+}
+
+.article-header {
+    display: flex;   
+
+    .title-container {
+        flex: 1;
+    }
+
+    .article-info-container {
+        background-color: #252525;
+        transform: skewX(60deg);
+        width: 661px;
+        position: relative;
+        right: -200px;
+        z-index: 0;
+
+        p {
+            margin-left: 100px;
+            transform: skewX(-60deg);
+            font-size: 24px;
+            font-family: 'inter', Arial;
+            font-style: italic;
+            color: #ADADAD;
+        }
+    }
+
+    .title-container {
+        margin-left: 300px;
+
+        .article-title {
+            font-family: 'istok web', Arial;
+            font-size: 48px;
+            margin-top: 40px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .article-title-cont {
+            text-align: center;
+            font-family: 'istok web', Arial;
+            margin: 10px 0;
+        }
+    }
+}
+
+hr {
+    border-color: #424242;
+    border-style: solid;
+}
+
+article {
+    width: 1000px;
+    position: relative;
+    margin: 100px auto;
+
+    section {
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'istok web', Arial;
+        }
+
+        .section-text {
+            font-size: 20px;
+            font-family: 'istok web', Arial;
+        }
     }
 }
