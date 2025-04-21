@@ -6,6 +6,7 @@ body {
     background-color: #39393C;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .header-container {
@@ -125,6 +126,26 @@ article {
         .section-text {
             font-size: 20px;
             font-family: 'istok web', Arial;
+        }
+    }
+
+    .image-card {
+        padding: 10px;
+        width: 650px;
+        img {
+            width: 650px
+        }
+
+        iframe {
+            border-style: none;
+            width: 650px;
+            height: 315px;
+        }
+
+        .image-card-text {
+            font-family: 'istok web', Arial;
+            color: #989898;
+            text-decoration: underline;
         }
     }
 }
