@@ -6,13 +6,12 @@ body {
     background-color: #39393C;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 .header-container {
     background-color: #252525;
     margin: 0px;
-    height: 100px;
+    height: 6.9vh;
     display: flex;
     flex: 1;
     align-items: center;
@@ -22,9 +21,9 @@ body {
     
     .blog-title {
         font-family: 'istok web', Arial;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: bold;
-        margin-left: 98px;
+        margin-left: 3.828vw;
         flex: 1;
     }
 
@@ -70,15 +69,25 @@ body {
 
     .article-info-container {
         background-color: #252525;
-        transform: skewX(60deg);
         width: 661px;
+        height: 200px;
+        shape-outside: polygon(
+            0 0,
+            100% 0,
+            100% 75%,
+            25% 75%
+            );
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 75%,
+            25% 75%
+            );
         position: relative;
-        right: -200px;
         z-index: 0;
 
         p {
-            margin-left: 100px;
-            transform: skewX(-60deg);
+            margin-left: 200px;
             font-size: 24px;
             font-family: 'inter', Arial;
             font-style: italic;
@@ -91,7 +100,7 @@ body {
 
         .article-title {
             font-family: 'istok web', Arial;
-            font-size: 48px;
+            font-size: 3rem;
             margin-top: 40px;
             margin-bottom: 0;
             text-align: center;
