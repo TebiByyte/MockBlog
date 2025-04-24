@@ -131,15 +131,17 @@ article {
 
     .image-card {
         padding: 10px;
-        width: 650px;
+        width: 800px;
+        margin: 0 auto;
+
         img {
-            width: 650px
+            width: 800px
         }
 
         iframe {
             border-style: none;
-            width: 650px;
-            height: 315px;
+            width: 800px;
+            height: 400px;
         }
 
         .image-card-text {
