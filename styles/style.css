@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+a {
+    word-wrap: break-word;
+}
+
 .header-container {
     background-color: #252525;
     margin: 0px;
